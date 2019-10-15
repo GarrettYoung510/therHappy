@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>therHappy</title>
+    <title>therHappy Mental Health Session</title>
     <link rel="stylesheet" href="./styles/style.css">
 
     <!-- google font -->
@@ -16,7 +16,7 @@
 
 
     <nav id="navbar-example2" class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">therHappy Mental Health Session</a>
+        <a class="navbar-brand" href="#">therHappy</a>
         <ul class="nav nav-pills">
             <li class="nav-item">
                 <a class="nav-link disabled" href="#mdo">ScrollSpy: </a>
@@ -41,48 +41,48 @@
     <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
         <div class="jumbotron dark">
             <h1 class="display-4">therHappy</h1>
-            <p class="lead alert alert-primary" style="text-align:center;">With this app we are linking patient, therapist trainee, and supervisor all in one place!</p>
+            <p class="lead alert alert-primary" style="text-align:center;">With this app we are spreading accessibility for mental health sessions!</p>
 
-            <h1>
-                Video Call Demo<br><small style="font-size: 14pt">Powered by Agora.io</small>
-            </h1>
 
+            <hr class="my-4">
+            <!-- <p>Your Feed is below</p> -->
+            <h4  id="myFeed"></h4>
+            <h4 class="text-center text-info">My Feed</h4>
+            <div class="rounded border border-info" id="me"></div>
+            <!-- Current User's feed -->
+            <!-- <p>...</p> -->
+            <h4 id="remoteFeeds"></h4>
+            <h4 class="text-center text-info">Remote Feeds</h4>
+            <div id="remote-container" style="text-align: center; margin-left: 30%; margin-right: 30%;">
+                <!-- Remote Feeds -->
+            </div>
+            <p class="text-center text-info text-danger" id="remoteFeeds">Currently No Remote Feeds</p>
+            <h4 class="text-center text-info" id="one">Patient Information</h4>
+            <p class="text-center text-success" >Seems very happy and healthy</p>
+            <h4 class="text-center text-info" id="two">Helpful Tips</h4>
+            <p class="text-center text-success" >Keep at it! You seem very healthy!</p>
+            <h4 class="text-center text-info" id="three">Emotional Analysis from Agora</h4>
+            <p class="text-center text-success" >50% Happy 50% Driven</p>
+            <h4 class="text-center text-info">
+                Video<br><small style="font-size: 14pt">Powered by Agora.io</small>
+            </h4>
+        
             <div style="display: none;">
                 <h4>Canvas :</h4>
                 <div id="canvas-container" style="text-align: center;">
-
+        
                 </div>
             </div>
-
+        
             <!-- <h4>Result :</h4> -->
             <div id="result-container" style="text-align: center;">
-
+        
             </div>
             <div class="col text-center">
                 <a class="btn btn-primary btn-lg" href="https://www.agora.io/" target="_blank" role="button" style="text-align: center;">Learn more</a>
             </div>
-            <hr class="my-4">
-            <!-- <p>Your Feed is below</p> -->
-            <h4 id="myFeed"></h4>
-            <h4>My Feed</h4>
-            <div id="me"></div>
-            <!-- Current User's feed -->
-            <p>...</p>
-            <h4 id="remoteFeeds"></h4>
-            <h4>Remote Feeds</h4>
-            <div id="remote-container" style="text-align: center; margin-left: 30%; margin-right: 30%;">
-                <!-- Remote Feeds -->
-            </div>
-            <p>...</p>
-            <h4 id="one">Patient Information</h4>
-            <p>...</p>
-            <h4 id="two">Helpful Tips</h4>
-            <p>...</p>
-            <h4 id="three">Emotional Analysis from Agora</h4>
-            <p>...</p>
         </div>
     </div>
-
 
     <script src="./scripts/socket.io.js"></script>
     <script src="scripts/AgoraRTCSDK-2.4.0.js"></script>
