@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Video Call Demo</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Text&display=swap" rel="stylesheet">
+    <!-- link to bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+
+    <nav id="navbar-example2" class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">Mental Health Session</a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#mdo">ScrollSpy: </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#myFeed">My Feed</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#remoteFeeds">Remote Feeds</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#one">one</a>
+                    <a class="dropdown-item" href="#two">two</a>
+                    <div role="separator" class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#three">three</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+        <div class="jumbotron dark">
+            <h1 class="display-4">Mental Health...</h1>
+            <p class="lead alert alert-primary" style="text-align:center;">With this app we are linking patient, therapist trainee, and supervisor all in one place!</p>
+
+            <h1>
+                Video Call Demo<br><small style="font-size: 14pt">Powered by Agora.io</small>
+            </h1>
+
+            <div style="display: none;">
+                <h4>Canvas :</h4>
+                <div id="canvas-container" style="text-align: center;">
+
+                </div>
+            </div>
+
+            <!-- <h4>Result :</h4> -->
+            <div id="result-container" style="text-align: center;">
+
+            </div>
+            <div class="col text-center">
+                <a class="btn btn-primary btn-lg" href="https://www.agora.io/" target="_blank" role="button" style="text-align: center;">Learn more</a>
+            </div>
+            <hr class="my-4">
+            <!-- <p>Your Feed is below</p> -->
+            <h4 id="myFeed"></h4>
+            <h4>My Feed</h4>
+            <div id="me"></div>
+            <!-- Current User's feed -->
+            <p>...</p>
+            <h4 id="remoteFeeds"></h4>
+            <h4>Remote Feeds</h4>
+            <div id="remote-container" style="text-align: center; margin-left: 30%; margin-right: 30%;">
+                <!-- Remote Feeds -->
+            </div>
+            <p>...</p>
+            <h4 id="one">Information</h4>
+            <p>...</p>
+            <h4 id="two">Information two</h4>
+            <p>...</p>
+            <h4 id="three">Information three</h4>
+            <p>...</p>
+        </div>
+    </div>
+
+
+    <script src="./scripts/socket.io.js"></script>
+    <script src="scripts/AgoraRTCSDK-2.4.0.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+
+</html>
